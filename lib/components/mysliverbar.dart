@@ -8,10 +8,24 @@ class Mysliverbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
+      expandedHeight: 340,
+      collapsedHeight: 120,
+      floating: false,
+      pinned: true,
+      actions: [
+        //cart button
+        IconButton(onPressed: () {}, icon: Icon(Icons.shopping_cart))
+      ],
       backgroundColor: Theme.of(context).colorScheme.surface,
-      title: title,
+      title: Text("Sunset Food"),
+      centerTitle: true,
       flexibleSpace: FlexibleSpaceBar(
-        background: child,
+        background: Padding(
+          padding: const EdgeInsets.only(bottom: 50),
+          child: child,
+        ),
+        title: title,
+        centerTitle: true,
       ),
     );
   }

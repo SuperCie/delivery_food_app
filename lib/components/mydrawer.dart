@@ -1,7 +1,6 @@
 import 'package:delivery_food/components/mytile.dart';
 import 'package:delivery_food/pages/home_page.dart';
 import 'package:delivery_food/pages/setting_page.dart';
-import 'package:delivery_food/theme/theme_provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
