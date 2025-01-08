@@ -6,9 +6,7 @@ class CartItem {
   int quantity;
 
   CartItem(
-      {required this.food,
-      required this.selectedAddons,
-      required this.quantity});
+      {required this.food, required this.selectedAddons, this.quantity = 1});
 
   double get totalPrice {
     double addonsPrice =
